@@ -1,0 +1,36 @@
+# Step 1: Specify the base image
+FROM node:14 AS builder
+
+# Step 2: Set the working directory in the Docker image
+WORKDIR /usr/src/app
+
+# Step 3: Copy package.json and package-lock.json
+COPY package*.json ./
+
+# Step 4: Install dependencies
+RUN npm install
+
+# Step 5: Copy the rest of your app
+COPY . .
+
+# Step 6: Build the app
+RUN npm run build
+
+# ---- Run Stage ----
+# Step 7: Specify the base image for running the app
+FROM node:14-alpine
+
+# Step 8: Set the working directory in the Docker image
+WORKDIR /usr/src/app
+
+# Step 9: Install serve
+RUN npm install -g serve
+
+# Step 10: Copy the build output from the build stage
+COPY --from=builder /usr/src/app/build .
+
+# Step 11: Expose the port your app runs on
+EXPOSE 5000
+
+# Step 12: Specify the command to run your app
+CMD [ "serve", "-s", ".", "-l", "5000" ]
