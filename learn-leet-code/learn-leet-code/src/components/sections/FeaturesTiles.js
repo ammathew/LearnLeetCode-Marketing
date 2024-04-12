@@ -101,7 +101,7 @@ class FeaturesTiles extends React.Component {
                       Active Recall
                     </h4>
                     <p className="m-0 text-sm">
-                      LearnLeetCode prompts you to actively engage with the problems. Recall the key concepts, algorithms, and coding patterns from memory, strengthening the neural pathways and reinforcing your understanding. 
+                      LearnLeetCode prompts you to actively engage with the problems. Recall key concepts, algorithms, and coding patterns from memory, strengthening neural pathways and reinforcing your understanding. 
                     </p>
                   </div>
                 </div>
