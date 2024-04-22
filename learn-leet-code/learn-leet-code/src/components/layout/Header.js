@@ -94,7 +94,7 @@ class Header extends React.Component {
               'site-header-inner',
               bottomDivider && 'has-bottom-divider'
             )}>
-            {/* <Logo /> */}
+            <Logo />
             {!hideNav &&
               <React.Fragment>
                 <button
