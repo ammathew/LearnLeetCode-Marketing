@@ -4,7 +4,7 @@ import Footer from '../components/layout/Footer';
 
 const LayoutDefault = ({ children }) => (
   <React.Fragment>
-    {/* <Header className="invert-color" navPosition="right" /> */}
+    <Header className="invert-color" navPosition="right" />
     <main className="site-content">
       {children}
     </main>

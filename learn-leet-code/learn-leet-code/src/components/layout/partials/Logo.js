@@ -19,13 +19,13 @@ const Logo = ({
       className={classes}
     >
       <h1 className="m-0">
-        {/* {<Link to="/">
+        {<Link to="/">
           <Image
             src={require('./../../../assets/images/logo.png')}
             alt="Tidy"
             width={400}
             height={32} />
-        </Link>} */}
+        </Link>}
       </h1>
     </div>
   );

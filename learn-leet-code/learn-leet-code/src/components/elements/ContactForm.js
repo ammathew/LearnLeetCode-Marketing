@@ -97,7 +97,7 @@ class ContactForm extends React.Component {
           >
             <div className="cta-slogan">
               <h3 className="m-0">
-                Comes out April 2024. Join the waitlist. 
+                We are beta testing. Join the waitlist to try it out.
               </h3>
             </div>
             <div className="cta-action">
