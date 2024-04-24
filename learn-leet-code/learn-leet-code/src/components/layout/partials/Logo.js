@@ -22,7 +22,7 @@ const Logo = ({
         {<Link to="/">
           <Image
             src={require('./../../../assets/images/robot-logo.png')}
-            alt="Tidy"
+            alt="learn leet code logo"
             width={40}
             height={40} />
         </Link>}
