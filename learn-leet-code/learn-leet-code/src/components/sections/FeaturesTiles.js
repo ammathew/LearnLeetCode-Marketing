@@ -79,7 +79,7 @@ class FeaturesTiles extends React.Component {
                       Ask questions, get asked questions. 
                     </h4>
                     <p className="m-0 text-sm">
-                      A superficial undestanding of solutions is not enough. Develop confidence for your interviews. 
+                      A superficial understanding of solutions is not enough. Develop confidence for your interviews. 
                     </p>
                   </div>
                 </div>
@@ -101,7 +101,7 @@ class FeaturesTiles extends React.Component {
                       Active Recall
                     </h4>
                     <p className="m-0 text-sm">
-                      LearnLeetCode prompts you to actively engage with the problems. Recall key concepts, algorithms, and coding patterns from memory, strengthening neural pathways and reinforcing your understanding. 
+                      LearnLeetCode prompts you to actively engage with the problems. Recall key concepts, algorithms, and coding patterns from memory, strengthening neural pathways and reinforcing your understanding.
                     </p>
                   </div>
                 </div>
