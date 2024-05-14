@@ -16,6 +16,7 @@ class Home extends React.Component {
         <HeroSplit hasBgColor invertColor />
         <FeaturesTiles />
         <FeaturesSplit2 />
+        <Pricing />
       </React.Fragment>
     );
   }

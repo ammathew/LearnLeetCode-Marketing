@@ -93,7 +93,8 @@ class Header extends React.Component {
             classNames(
               'site-header-inner',
               bottomDivider && 'has-bottom-divider'
-            )}>
+            )}
+            style={{ paddingTop: '20px' }}>
             <Logo />
             {!hideNav &&
               <React.Fragment>
@@ -115,23 +116,22 @@ class Header extends React.Component {
                       this.state.isActive && 'is-active'
                     )}>
                   <div className="header-nav-inner">
-                    {/* <ul className={
+                    <ul className={
                       classNames(
                         'list-reset text-xs',
                         navPosition && `header-nav-${navPosition}`
                       )}>
                       <li>
-                        <Link to="/secondary/" onClick={this.closeMenu}>Secondary page</Link>
+                        <a href="http://app.learnleetcode.com/signup" onClick={this.closeMenu}>Sign up</a>
                       </li>
-                    </ul> */}
-                    {!hideSignin &&
-                      <ul
-                        className="list-reset header-nav-right"
-                      >
-                        <li>
-                          <a href="http://app.learnleetcode.com/login" className="button button-primary button-wide-mobile button-sm" onClick={this.closeMenu}>Sign in</a>
-                        </li>
-                      </ul>}
+                    </ul>
+                    <ul
+                      className="list-reset header-nav-right"
+                    >
+                      <li>
+                        <a href="http://app.learnleetcode.com/login" className="button button-primary button-wide-mobile button-sm" onClick={this.closeMenu}>Sign in</a>
+                      </li>
+                    </ul>
                   </div>
                 </nav>
               </React.Fragment>}

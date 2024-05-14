@@ -84,18 +84,30 @@ class HeroSplit extends React.Component {
             <div className={splitClasses}>
               <div className="split-item">
                 <div className="hero-content split-item-content center-content-mobile reveal-from-top">
-                  <p>
-                  </p>
                   <h1 className="mt-0 mb-16">
                     Learn Leet Code
                   </h1>
                   <p className="mt-0 mb-32">
-                    Learn thoroughly and efficiently with a learning interface personalized to you. Master your coding interviews. 
+                  Learn thoroughly and efficiently with a learning interface personalized to you. Master your coding interviews.
                   </p>
-                </div> 
-                <ContactForm />
-              </div>
+                  {/* <ButtonGroup>
+                    <Button tag="a" color="primary" href="https://cruip.com/" wideMobile>
+                      Pricing and plans
+                    </Button>
+                    <Button tag="a" color="dark" href="https://cruip.com/" wideMobile>
+                      Learn more
+                    </Button>                    
+                  </ButtonGroup> */}
+                </div>
+                <div className="hero-figure split-item-image split-item-image-fill reveal-from-bottom">
+                    <Image
+                      src={require('./../../assets/images/hero-picture.png')}
+                      alt="Hero"
+                      width={528}
+                      height={396} />
 
+                </div>
+              </div>
             </div>
           </div>
         </div>

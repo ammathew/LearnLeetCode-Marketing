@@ -21,7 +21,7 @@ const defaultProps = {
 class Pricing extends React.Component {
 
   state = {
-    priceChangerValue: "4",
+    priceChangerValue: "0",
     priceInput: {
       0: "1,000",
       1: "1,250",
@@ -35,38 +35,8 @@ class Pricing extends React.Component {
     },
     priceOutput: {
       plan1: {
-        0: ["$", "0", "/m"],
-        1: ["$", "13", "/m"],
-        2: ["$", "17", "/m"],
-        3: ["$", "21", "/m"],
-        4: ["$", "27", "/m"],
-        5: ["$", "42", "/m"],
-        6: ["$", "58", "/m"],
-        7: ["$", "117", "/m"],
-        8: ["$", "208", "/m"]
+        0: ["$", "30", "/3 months"],
       },
-      plan2: {
-        0: ["$", "13", "/m"],
-        1: ["$", "17", "/m"],
-        2: ["$", "21", "/m"],
-        3: ["$", "25", "/m"],
-        4: ["$", "47", "/m"],
-        5: ["$", "58", "/m"],
-        6: ["$", "117", "/m"],
-        7: ["$", "208", "/m"],
-        8: ["$", "299", "/m"]
-      },
-      plan3: {
-        0: ["$", "17", "/m"],
-        1: ["$", "21", "/m"],
-        2: ["$", "25", "/m"],
-        3: ["$", "42", "/m"],
-        4: ["$", "67", "/m"],
-        5: ["$", "117", "/m"],
-        6: ["$", "208", "/m"],
-        7: ["$", "299", "/m"],
-        8: ["$", "499", "/m"]
-      }
     }
   }
 
@@ -140,7 +110,7 @@ class Pricing extends React.Component {
 
     const sectionHeader = {
       title: 'Simple, transparent pricing',
-      paragraph: 'Vitae aliquet nec ullamcorper sit amet risus nullam eget felis semper quis lectus nulla at volutpat diam ut venenatis tellus in ornare.'
+      paragraph: 'One month free; billed quarterly.'
     };
 
     return (
@@ -150,35 +120,8 @@ class Pricing extends React.Component {
       >
         <div className="container">
           <div className={innerClasses}>
-            <SectionHeader data={sectionHeader} className="center-content invert-color" />
-            {pricingSwitcher &&
-              <div className="pricing-switcher center-content invert-color">
-                <Switch
-                  checked={this.state.priceChangerValue === '1' ? true : false}
-                  onChange={this.handlePricingSwitch}
-                  rightLabel="Billed Annually">
-                    Billed Monthly
-                </Switch>
-              </div>
-            }
-            {pricingSlider &&
-              <div className="pricing-slider center-content invert-color">
-                <label className="form-slider">
-                  <span className="mb-16">How many users do you have?</span>
-                  <input
-                    type="range"
-                    ref={this.slider}
-                    defaultValue={this.state.priceChangerValue}
-                    onChange={this.handlePricingSlide}
-                  />
-                </label>
-                <div ref={this.sliderValue} className="pricing-slider-value">
-                  {this.getPricingData(this.state.priceInput)}
-                </div>
-              </div>
-            }            
+            <SectionHeader data={sectionHeader} className="center-content invert-color" />        
             <div className={tilesClasses}>
-
               <div className="tiles-item reveal-from-bottom">
                 <div className="tiles-item-inner has-shadow">
                   <div className="pricing-item-content">
@@ -192,101 +135,28 @@ class Pricing extends React.Component {
                         </span>
                         <span className="pricing-item-price-after text-sm">{this.getPricingData(this.state.priceOutput.plan1, 2)}</span>
                       </div>
-                      <div className="text-xs text-color-low">
+                      {/* <div className="text-xs text-color-low">
                         Lorem ipsum is a common text
-                      </div>
+                      </div> */}
                     </div>
                     <div className="pricing-item-features mb-40">
                       <div className="pricing-item-features-title h6 text-xs text-color-high mb-24">
                         What’s included
                       </div>
                       <ul className="pricing-item-features-list list-reset text-xs mb-32">
-                        <li className="is-checked">Excepteur sint occaecat velit</li>
-                        <li className="is-checked">Excepteur sint occaecat velit</li>
-                        <li className="is-checked">Excepteur sint occaecat velit</li>
-                        <li>Excepteur sint occaecat velit</li>
-                        <li>Excepteur sint occaecat velit</li>
+                        <li className="is-checked">Conversational learning platform</li>
+                        <li className="is-checked">Teacherbots</li>
+                        <li className="is-checked">Problem checklist</li>
+                        <li className="is-checked">Save Highlights</li>
+                        <li className="is-checked">Coming soon: spaced repetition</li>
                       </ul>
                     </div>
                   </div>
                   <div className="pricing-item-cta mb-8">
-                    <Button tag="a" color="primary" wide href="http://cruip.com/">Start free trial</Button>
+                    <Button tag="a" color="primary" wide href="http://app.learnleetcode.com/signup">Start free trial</Button>
                   </div>
                 </div>
               </div>
-
-              <div className="tiles-item reveal-from-bottom" data-reveal-delay="200">
-                <div className="tiles-item-inner has-shadow">
-                  <div className="pricing-item-content">
-                    <div className="pricing-item-header pb-24 mb-24">
-                      <div className="pricing-item-price mb-8">
-                        <span className="pricing-item-price-currency h3">
-                          {this.getPricingData(this.state.priceOutput.plan2, 0)}
-                        </span>
-                        <span className="pricing-item-price-amount h1">
-                          {this.getPricingData(this.state.priceOutput.plan2, 1)}
-                        </span>
-                        <span className="pricing-item-price-after text-sm">{this.getPricingData(this.state.priceOutput.plan2, 2)}</span>
-                      </div>
-                      <div className="text-xs text-color-low">
-                        Lorem ipsum is a common text
-                      </div>
-                    </div>
-                    <div className="pricing-item-features mb-40">
-                      <div className="pricing-item-features-title h6 text-xs text-color-high mb-24">
-                        What’s included
-                      </div>
-                      <ul className="pricing-item-features-list list-reset text-xs mb-32">
-                        <li className="is-checked">Excepteur sint occaecat velit</li>
-                        <li className="is-checked">Excepteur sint occaecat velit</li>
-                        <li className="is-checked">Excepteur sint occaecat velit</li>
-                        <li className="is-checked">Excepteur sint occaecat velit</li>
-                        <li>Excepteur sint occaecat velit</li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div className="pricing-item-cta mb-8">
-                    <Button tag="a" color="primary" wide href="http://cruip.com/">Start free trial</Button>
-                  </div>
-                </div>
-              </div>
-
-              <div className="tiles-item reveal-from-bottom" data-reveal-delay="400">
-                <div className="tiles-item-inner has-shadow">
-                  <div className="pricing-item-content">
-                    <div className="pricing-item-header pb-24 mb-24">
-                      <div className="pricing-item-price mb-8">
-                        <span className="pricing-item-price-currency h3">
-                          {this.getPricingData(this.state.priceOutput.plan3, 0)}
-                        </span>
-                        <span className="pricing-item-price-amount h1">
-                          {this.getPricingData(this.state.priceOutput.plan3, 1)}
-                        </span>
-                        <span className="pricing-item-price-after text-sm">{this.getPricingData(this.state.priceOutput.plan3, 2)}</span>
-                      </div>
-                      <div className="text-xs text-color-low">
-                        Lorem ipsum is a common text
-                      </div>
-                    </div>
-                    <div className="pricing-item-features mb-40">
-                      <div className="pricing-item-features-title h6 text-xs text-color-high mb-24">
-                        What’s included
-                      </div>
-                      <ul className="pricing-item-features-list list-reset text-xs mb-32">
-                        <li className="is-checked">Excepteur sint occaecat velit</li>
-                        <li className="is-checked">Excepteur sint occaecat velit</li>
-                        <li className="is-checked">Excepteur sint occaecat velit</li>
-                        <li className="is-checked">Excepteur sint occaecat velit</li>
-                        <li className="is-checked">Excepteur sint occaecat velit</li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div className="pricing-item-cta mb-8">
-                    <Button tag="a" color="primary" wide href="http://cruip.com/">Start free trial</Button>
-                  </div>
-                </div>
-              </div>                            
-
             </div>
           </div>
         </div>
