@@ -164,7 +164,7 @@ class FeaturesTiles extends React.Component {
                   </div>
                   <div className="features-tiles-item-content">
                     <h4 className="mt-0 mb-8">
-                      Keep track of solved problem
+                      Keep track of solved problems
                     </h4>
                     <p className="m-0 text-sm">
                       Built in roadmaps based on Blind75 and the NeetCode150.
