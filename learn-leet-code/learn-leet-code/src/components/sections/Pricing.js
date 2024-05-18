@@ -110,7 +110,7 @@ class Pricing extends React.Component {
 
     const sectionHeader = {
       title: 'Simple, transparent pricing',
-      paragraph: 'One month free; billed quarterly.'
+      paragraph: 'Free to try. No Credit Card required.'
     };
 
     return (
@@ -135,12 +135,12 @@ class Pricing extends React.Component {
                         </span>
                         <span className="pricing-item-price-after text-sm">{this.getPricingData(this.state.priceOutput.plan1, 2)}</span>
                       </div>
-                      {/* <div className="text-xs text-color-low">
-                        Lorem ipsum is a common text
-                      </div> */}
+                      <div className="h6 text-xs text-color-high">
+                      Free to try. No Credit Card required.
+                      </div>
                     </div>
                     <div className="pricing-item-features mb-40">
-                      <div className="pricing-item-features-title h6 text-xs text-color-high mb-24">
+                      <div className="pricing-item-features-title h6 text-xs text-color-low mb-24">
                         What’s included
                       </div>
                       <ul className="pricing-item-features-list list-reset text-xs mb-32">

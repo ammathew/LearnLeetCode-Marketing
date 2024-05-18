@@ -129,6 +129,73 @@ class FeaturesTiles extends React.Component {
                 </div>
               </div>
 
+              <div className="tiles-item reveal-from-bottom" data-reveal-container=".tiles-wrap" data-reveal-delay="200">
+                <div className="tiles-item-inner">
+                  <div className="features-tiles-item-header">
+                    <div className="features-tiles-item-image mb-16">
+                      <Image
+                        src={require('./../../assets/images/feature-tile-icon-05.svg')}
+                        alt="Features tile icon 05"
+                        width={64}
+                        height={64} />
+                    </div>
+                  </div>
+                  <div className="features-tiles-item-content">
+                    <h4 className="mt-0 mb-8">
+                     Learn on your phone. 
+                    </h4>
+                    <p className="m-0 text-sm">
+                  Learn on your phone. Have LearnLeetCode ask you questions about problems on the go, on your commute, lounging on your couch, etc. 
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="tiles-item reveal-from-bottom" data-reveal-container=".tiles-wrap" data-reveal-delay="200">
+                <div className="tiles-item-inner">
+                  <div className="features-tiles-item-header">
+                    <div className="features-tiles-item-image mb-16">
+                      <Image
+                        src={require('./../../assets/images/feature-tile-icon-01.svg')}
+                        alt="Features tile icon 01"
+                        width={64}
+                        height={64} />
+                    </div>
+                  </div>
+                  <div className="features-tiles-item-content">
+                    <h4 className="mt-0 mb-8">
+                      Keep track of solved problem
+                    </h4>
+                    <p className="m-0 text-sm">
+                      Built in roadmaps based on Blind75 and the NeetCode150.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="tiles-item reveal-from-bottom" data-reveal-container=".tiles-wrap" data-reveal-delay="200">
+                <div className="tiles-item-inner">
+                  <div className="features-tiles-item-header">
+                    <div className="features-tiles-item-image mb-16">
+                      <Image
+                        src={require('./../../assets/images/feature-tile-icon-01.svg')}
+                        alt="Features tile icon 01"
+                        width={64}
+                        height={64} />
+                    </div>
+                  </div>
+                  <div className="features-tiles-item-content">
+                    <h4 className="mt-0 mb-8">
+                      Customized prompting
+                    </h4>
+                    <p className="m-0 text-sm">
+                      Add base prompts like "First explain to me in 20 words or less". Build out your undestanding in ways that resonate with you.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+
             </div>
           </div>
         </div>
