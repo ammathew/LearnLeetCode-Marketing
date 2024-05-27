@@ -142,6 +142,32 @@ class FeaturesSplit extends React.Component {
                 </div>
               </div>
 
+
+              <div className="split-item">
+                <div className="split-item-content center-content-mobile">
+                  <h3 className="mt-0 mb-16 reveal-from-bottom" data-reveal-container=".split-item">
+                    Track Your Progress
+                  </h3>
+                  <p className="m-0 reveal-from-bottom" data-reveal-delay="100" data-reveal-container=".split-item">
+                    No more aimless studying. Watch your progress as problems get easier for you over time. Build confidence and mastery.
+                  </p>
+                </div>
+                <div className={
+                  classNames(
+                    'split-item-image center-content-mobile reveal-scale-up',
+                    imageFill && 'split-item-image-fill'
+                  )}
+                  data-reveal-container=".split-item"
+                  data-reveal-delay="200">
+                  <Image
+                    className="has-shadow"
+                    src={require('./../../assets/images/calendar-feature.png')}
+                    alt="Features split 02"
+                    width={528}
+                    height={396} />
+                </div>
+              </div>
+
             </div>
           </div>
         </div>
