@@ -136,7 +136,7 @@ class Pricing extends React.Component {
                         <span className="pricing-item-price-after text-sm">{this.getPricingData(this.state.priceOutput.plan1, 2)}</span>
                       </div>
                       <div className="h6 text-xs text-color-high">
-                      Free to try. No Credit Card required.
+                      Free to try for 30 days. No Credit Card required.
                       </div>
                     </div>
                     <div className="pricing-item-features mb-40">
