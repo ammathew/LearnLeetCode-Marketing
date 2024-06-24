@@ -148,7 +148,7 @@ class Pricing extends React.Component {
                         <li className="is-checked">Teacherbots</li>
                         <li className="is-checked">Problem checklist</li>
                         <li className="is-checked">Save Highlights</li>
-                        <li className="is-checked">Coming soon: spaced repetition</li>
+                        <li className="is-checked">Email reminders of problems</li>
                       </ul>
                     </div>
                   </div>

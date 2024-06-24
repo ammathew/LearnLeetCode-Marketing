@@ -189,7 +189,7 @@ class FeaturesTiles extends React.Component {
                       Customized prompting
                     </h4>
                     <p className="m-0 text-sm">
-                      Add base prompts like "First explain to me in 20 words or less". Build out your undestanding in ways that resonate with you.
+                      Add base prompts like "First explain to me in 20 words or less". Build out your understanding in ways that resonate with you.
                     </p>
                   </div>
                 </div>

@@ -73,7 +73,7 @@ class FeaturesSplit extends React.Component {
                     Active Learning
                   </h3>
                   <p className="m-0 reveal-from-bottom" data-reveal-delay="100" data-reveal-container=".split-item">
-                    LearnLeetCode asks you questions and actively probes your learning. This is the real way to learn. A superficial undestanding of solutions is not enough to be really confident in your interviews.
+                    LearnLeetCode asks you questions and actively probes your learning. <strong>This is the real way to learn</strong>. A superficial understanding of solutions is not enough to be really confident in your interviews.
                   </p>
                 </div>
                 <div className={
@@ -98,7 +98,7 @@ class FeaturesSplit extends React.Component {
                     Save Highlights and be tested on them later. 
                   </h3>
                   <p className="m-0 reveal-from-bottom" data-reveal-delay="100" data-reveal-container=".split-item">
-                    Utilize the power of spaced repetition. Save highlights and be tested on them later.
+                    Highlight aspects of the problem you want to return to and be tested on them later.
                   </p>
                 </div>
                 <div className={
@@ -162,6 +162,31 @@ class FeaturesSplit extends React.Component {
                   <Image
                     className="has-shadow"
                     src={require('./../../assets/images/calendar-feature.png')}
+                    alt="Features split 02"
+                    width={528}
+                    height={396} />
+                </div>
+              </div>
+
+              <div className="split-item">
+                <div className="split-item-content center-content-mobile">
+                  <h3 className="mt-0 mb-16 reveal-from-bottom" data-reveal-container=".split-item">
+                    Email Reminders of Studied Problems
+                  </h3>
+                  <p className="m-0 reveal-from-bottom" data-reveal-delay="100" data-reveal-container=".split-item">
+                    <strong>A person typically forgets 50-80% of what they studied only a few days after studying</strong>. BUT, if you review within those few days, you only forget around 30%. If you review within a few days of reviewing, you only forget 10%. Conveniently space your studying at strategic intervals.
+                  </p>
+                </div>
+                <div className={
+                  classNames(
+                    'split-item-image center-content-mobile reveal-scale-up',
+                    imageFill && 'split-item-image-fill'
+                  )}
+                  data-reveal-container=".split-item"
+                  data-reveal-delay="200">
+                  <Image
+                    className="has-shadow"
+                    src={require('./../../assets/images/email-feature-2.png')}
                     alt="Features split 02"
                     width={528}
                     height={396} />
